@@ -1,6 +1,5 @@
 {
   "name": "kasa-app",
-  "homepage": "https://anlekg.github.io/kasa-app/",
   "private": true,
   "type": "module",
   "scripts": {

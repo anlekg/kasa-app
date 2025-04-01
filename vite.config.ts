@@ -26,5 +26,4 @@ export default defineConfig({
     react(),
     tsconfigPaths(),
   ],
-  base: "/kasa-app",
 })
