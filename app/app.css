@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-white text-black;
+  font-family: "Montserrat", sans-serif;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: light;
+  }
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.main-container {
+  @apply max-w-[1330px] mx-auto;
+  width: 95%;
+}
+
+.error-container {
+  color: #ff6060;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error-container .error-title {
+  font-size: 300px;
+  font-weight: 600;
+}
+
+.error-container .error-text {
+  font-size: 40px;
+}
+
+.error-container .error-link {
+  color: black;
+  text-decoration: underline;
+  padding: 100px;
+}

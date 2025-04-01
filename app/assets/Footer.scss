@@ -1,0 +1,29 @@
+$primary-color: #ffffff;
+$background-color: #000000;
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: $background-color;
+  color: $primary-color;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.footer-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .footer-logo-icon {
+    width: 100px;
+    height: auto;
+    margin: 30px;
+    fill: $primary-color;
+  }
+}
+
+.legal {
+  padding-bottom: 20px;
+}

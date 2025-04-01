@@ -1,0 +1,33 @@
+$mobile-break: 760px;
+
+.logement-card {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  @media (max-width: $mobile-break) {
+    width: 100%;
+    height: 500px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    transition: filter linear 0.2s;
+    &:hover {
+      filter: brightness(0.3);
+      cursor: pointer;
+    }
+  }
+
+  .card-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    color: white;
+  }
+}

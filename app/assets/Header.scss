@@ -1,0 +1,37 @@
+$primary-color: #ff6060;
+$text-color: #333;
+$font-size: 16px;
+$gap: 20px;
+$mobile-break: 760px;
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 10px 30px 15px 0;
+}
+
+.logo {
+  .logo-icon {
+    width: 200px;
+    height: auto;
+    fill: $primary-color;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: $gap;
+  font-size: $font-size;
+
+  .nav-link {
+    text-decoration: none;
+    color: $text-color;
+    font-weight: normal;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
