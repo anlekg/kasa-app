@@ -34,10 +34,16 @@ body {
 .error-container .error-title {
   font-size: 300px;
   font-weight: 600;
+  @media (max-width: 760px) {
+    font-size: 200px;
+  }
 }
 
 .error-container .error-text {
   font-size: 40px;
+  @media (max-width: 760px) {
+    font-size: 24px;
+  }
 }
 
 .error-container .error-link {

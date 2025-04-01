@@ -64,32 +64,36 @@ const LogementPage: React.FC = () => {
         <Header />
         <div className="logement-page">
           <Carousel id={logement.id} />
-          <div className="logement-header">
-            <h1>{logement.title}</h1>
-            <div className="logement-location">
-              <span>{logement.location}</span>
+          <div className="logements">
+            <div className="logement-header">
+              <h1>{logement.title}</h1>
+              <div className="logement-location">
+                <span>{logement.location}</span>
+              </div>
+              <div className="logement-tags">
+                {logement.tags.map((tag) => (
+                  <span key={tag} className="logement-tag">
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
-            <div className="logement-tags">
-              {logement.tags.map((tag) => (
-                <span key={tag} className="logement-tag">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="logement-footer">
-            <div className="logement-host">
-              <span>{logement.host.name}</span>
-              <img src={logement.host.picture} alt={logement.host.name} />
-            </div>
-            <div className="logement-rating">
-              {[...Array(5)].map((_, index) => (
-                <StarIcon
-                  className={
-                    index < parseInt(logement.rating) ? "star red" : "star grey"
-                  }
-                />
-              ))}
+            <div className="logement-footer">
+              <div className="logement-host">
+                <span>{logement.host.name}</span>
+                <img src={logement.host.picture} alt={logement.host.name} />
+              </div>
+              <div className="logement-rating">
+                {[...Array(5)].map((_, index) => (
+                  <StarIcon
+                    className={
+                      index < parseInt(logement.rating)
+                        ? "star red"
+                        : "star grey"
+                    }
+                  />
+                ))}
+              </div>
             </div>
           </div>
           <div className="logement-dropdowns">
